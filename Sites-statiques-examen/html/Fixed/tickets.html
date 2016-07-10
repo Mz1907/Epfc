@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Acheter un ticket pour la conf&eacute;rence">
+        <meta name="author" content="Zagaï Mehdi">
+        <link rel=icon href=assets/img/myFavicon.jpg sizes="16x16" type="image/jpg">
+        <title>Acheter tickets</title>
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/justified-nav.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet">
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="assets/js/custom.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="masthead">
+                    <!-- Logo + Titre du site -->
+                    <div class="row headerRow">
+                        <div class="col-xs-3 text-justify headerRowDiv1"><img src="assets/img/symfony_logo.png" alt="logo_sensionlabs" width="150" height="60" /></div>
+                        <div class="col-xs-9 text-justify headerRowDiv2"><h1>Symfony conf&eacute;rences 2016</h1></div>
+                    </div>
+                    <nav>
+                        <ul class="nav nav-justified">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li class="dropdown">
+                                <a href="eventBerlin.html" class="dropdown-toggle" data-toggle="dropdown">&Eacute;v&egrave;nements</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="eventBerlin.html">Berlin</a></li>
+                                    <li><a href="eventCologne.html">Francfort</a></li>
+                                </ul>
+                            </li>                            
+                            <li class="active"><a href="tickets.html">Tickets</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="row">
+                <section class="col-lg-3 section1">
+                    <h2>Bienvenu</h2>
+                    <!-- Row start -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading clearfix">
+                            <h3 class="panel-title">Authentification</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Votre e-mail" size="15">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Votre mot de passe" size="15">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Se souvenir de moi
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-info" title="">Se connecter</button>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="text-danger">Si vous souhaitez devenir membre veuillez remplir ce <a href="#">formulaire</a></p>
+                    <p>Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalit&eacute;s relatives aux m&eacute;dias sociaux et d'analyser notre trafic. Nous partageons &eacute;galement des informations sur l'utilisation de notre site avec nos partenaires de m&eacute;dias sociaux, de publicit&eacute; et d'analyse.</p>
+                    <p><a class="btn btn-info" href="#" role="button">En savoir plus</a></p>
+                </section>
+                <section class="col-lg-5 myBody section2">
+                    <h2>Acheter un ticket</h2>
+                    <h3>Prix:</h3>
+                    <ul id="groupe-prix" class="list-group">
+                        <li class="list-group-item active" data-prix="219">6 mois avant &Eacute;v&eacute;nement 219&euro;</li>
+                        <li class="list-group-item " data-prix="289">3 mois avant &Eacute;v&eacute;nement 289&euro;</li>
+                        <li class="list-group-item " data-prix="379">1 mois avant &Eacute;v&eacute;nement 379&euro;</li>
+                        <li class="list-group-item " data-prix="449">Sur place 449&euro;</li>
+                    </ul>
+                    <p>Prix unitaire du ticket &agrave; la date de ce jour: 219&euro;</p> 
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="vente">Nombre de tickets:</label>
+                            <select id="vente" class="form-control">                               
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <br />
+                            <p id="prix">Prix: <span id="prixSpan">0</span>&euro;</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Passer commande" name="submit">
+                        </div>
+                    </form>
+                    <p><a href="#"><img src="assets/img/sfc_berlin2016.png" alt="symfony_berlin_flyer" width="300" /></a></p>
+                </section>
+                <section class="col-lg-4 section3">
+                    <h2>Tweets</h2>
+                    <!-- connection internet requise pour afficher l'integration des tweets -->
+                    <blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr"><a href="https://twitter.com/javiereguiluz">@javiereguiluz</a> We summarized our learnings from SymfonyLive in Cologne: <a href="https://t.co/QFcPu5vWuV">https://t.co/QFcPu5vWuV</a> Could you pls add us to &quot;A week of symfony&quot;?</p>&mdash; Daniel Potthast (@d_potthast) <a href="https://twitter.com/d_potthast/status/726707717583323136">1 mai 2016</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">That was one of my favorite Jobs 😂<a href="https://twitter.com/robertDouglass">@robertDouglass</a> at <a href="https://twitter.com/hashtag/symfony_live?src=hash">#symfony_live</a> Cologne 2016</p>&mdash; Wiebke Bahne (@Wibbilein) <a href="https://twitter.com/Wibbilein/status/726167642810241024">29 avril 2016</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </section>
+            </div>
+            <footer class="footer text-center">
+                <p>&copy; 2016 Sensiolabs, Inc.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chess+ Forum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" lang="fr" content="Forum du site Chess+">
+        <meta name="author" content="Zagaï Mehdi">
+        <meta name="robots" content="index, follow">
+        <!-- icones -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="shortcut icon" href="assets/img/chess_favicon.png">
+        <!-- feuilles css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/forum.css">
+        <style>
+            #box {
+                border: hidden;
+                position: relative;     
+                padding: 10px;
+                width: 750px;
+                height: 450px;
+            }
+
+            .a {
+                position: absolute;
+                top: 10px; left: 0px;
+                padding: 5px;
+            }
+
+            .a ul{
+                text-align: left;
+            }
+
+            .b{
+                position: absolute;
+                top: 10px; left: 200px;
+                padding: 5px;
+            }
+
+            .b ul{
+                text-align: left;
+            }
+
+            .c{
+                position: absolute;
+                top: 10px; left: 400px;
+                padding: 5px;
+            }
+            .c ul{
+                text-align: left;
+            }
+        </style>
+
+        <!-- scripts js -->
+        <!--[if lt IE 9]>
+                <script src="assets/js/html5.js"></script>
+                <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>  
+        <script src="assets/js/mesFonctions.js"></script>
+        <script>
+            switchTheme();
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Chess+</a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- point n°2 menu permettant de changer de style -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-theme="default" class="theme-link">Default</a></li>
+                                <li><a href="#" data-theme="journal" class="theme-link">Flatly</a></li>
+                            </ul>
+                        </li>
+                    </ul>                          
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div class="container-fluid" style="background-color:#2196F3;color:#fff;height:200px;">
+            <h1>Chess+ forum</h1>
+            <h3>R&egrave;glement</h3>
+            <p>Dans l'intérêt de tous les membres du forum, nous vous demandons de respecter quelques règles simples.</p>
+            <p> Ces règles sont celles du bon sens, du respect et de la courtoisie. Que ce soit les règles d'or, qui permettent rapidement de se rappeler les points essentiels, ou les règles générales, celles-ci ne sont pas exhaustives et peuvent évoluer, consultez les régulièrement. Pour plus de détail sur l'usage des échanges sur internet</p>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm-3" id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                        <li><a href="#section1">Actualit&eacute;s</a></li>
+                        <li><a href="#section2">Club</a></li>
+                        <li><a href="#section3">Tournois</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Th&eacute;ories<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Ouvertures</a></li>
+                                <li><a href="#section42">Finales</a></li>                     
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="col-sm-9">
+                    <div id="section1">    
+                        <h1>Actualit&eacute;s</h1>
+                        <div>
+                            <ul>
+                                <li><a href="#" title="Film sur Magnus Carlsen">Film sur Magnus Carlsen</a></li>
+                                <li><a href="#" title="O&ugrave; sera organis&eacute; le Championnat de France 2016 ?">O&ugrave; sera organis&eacute; le Championnat de France 2016 ?</a></li>
+                                <li><a href="#" title="Derni&egrave;re ronde des interclubs">Derni&egrave;re ronde des interclubs</a></li>
+                                <li><a href="#" title="Candidature de Philippe Dornbusch &agrave; la FFE (2e partie)">Candidature de Philippe Dornbusch &agrave; la FFE (2e partie)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="section2"> 
+                        <h1>Club</h1>
+                        <ul>
+                            <li><a href="#" title="Derni&egrave;re ronde des interclubs">Derni&egrave;re ronde des interclubs</a></li>
+                            <li><a href="#" title="Le point sur les fusions de Ligues r&eacute;gionales">Le point sur les fusions de Ligues r&eacute;gionales</a></li>
+                            <li><a href="#" title="Rech prof mercrdi 14h-17h30">Rech prof mercrdi 14h-17h30</a></li>
+                            <li><a href="#" title="Club d'eybens (38 - isère)">club d'eybens (38 - isère)</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div id="section3">         
+                        <h1>Tournois</h1>
+                        <ul>
+                            <li><a href="#" title="1er Open FIDE de Roanne (-2200 ELO)">Stage d'&eacute;t&eacute; &agrave; l'ile d'Ischia,Italie. 29.07 - 03.08 2016</a></li>
+                            <li><a href="#" title="Tournois du Club 608 d&rsquo;&eacute;checs Paris St-Louis 2015">Tournois du Club 608 d&rsquo;&eacute;checs Paris St-Louis 2015</a></li>
+                            <li><a href="#" title="2&egrave;me Open d'Echecs de Th&ocirc;nes (Haute-Savoie)">2&egrave;me Open d'Echecs de Th&ocirc;nes (Haute-Savoie)</a></li>
+                            <li><a href="#" title="20&egrave;me tournoi rapide de Castelsarrasin et 7&egrave;me troph&eacute;e des petits pions">20&egrave;me tournoi rapide de Castelsarrasin et 7&egrave;me troph&eacute;e des petits pions</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="section41">         
+                        <h1>Ouvertures</h1>
+                        <ul>
+                            <li><a href="#" title="Les noirs répondent e5 et d5 ">Les noirs r&eacute;pondent e5 et d5</a></li>
+                            <li><a href="#" title="Française variante d'avance">Fran&ccedil;aise variante d'avance</a></li>
+                            <li><a href="#" title="Nimzo indépendante de l'ouest indienne et vice et versa?">Nimzo ind&eacute;pendante de l'ouest indienne et vice et versa?</a></li>
+                            <li><a href="#" title="Sicilienne najdorf 6. Fg5">Sicilienne najdorf 6. Fg5</a></li>
+                        </ul>
+                    </div>   
+
+                    <div id="section42">         
+                        <h1>Finales</h1>
+                        <ul>
+                            <li><a href="#">Finale fou contre cavalier</a></li>
+                            <li><a href="#">Finale Tour + Fou contre Tour</a></li>
+                            <li><a href="#">Initiation aux finales de Glenn Flear avec DVD</a></li>
+                            <li><a href="#">Tour + pion, un cas &eacute;l&eacute;mentaire</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <footer class="margin-tb-3">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- 12.Le positionnement « absolu » d’un bloc au sein d’un bloc lui-même « positionné ». -->
+                        <div id="box">
+                            <div class="a">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><strong><em>Qu'est ce que Chess+</em></strong></li>
+                                    <li class="list-group-item"><a href="#">Club</a></li>
+                                    <li class="list-group-item"><a href="#">Membres</a></li>
+                                    <li class="list-group-item"><a href="#">Location</a></li>
+                                </ul>
+                            </div>
+                            <div class="b">
+                                <ul class="list-group">                                    
+                                    <li class="list-group-item"><strong><em>&Agrave; propos du forum</em></strong></li>
+                                    <li class="list-group-item"><a href="#">R&egrave;gles du forum</a></li>
+                                    <li class="list-group-item"><a href="#">Contributeurs</a></li>
+                                    <li class="list-group-item"><a href="#">Faq</a></li>
+                                </ul>
+                            </div>
+                            <div class="c">
+                                <ul class="list-group">                                    
+                                    <li class="list-group-item"><strong><em>Consignes de travail</em></strong></li>
+                                    <li class="list-group-item">Point n&deg;4: <a href="#">une page contenant un menu avec liens, le menu occupera une position fixe au sein de la fen&ecirc;tre du navigateur et le contenu de la page devra s'afficher &agrave; la gauche ou &agrave; la droite du menu sans d&eacute;border en dessous de celui-ci. (voir menu sur cette page en haut &agrave; gauche</a></li>
+                                    <li class="list-group-item">Point n&deg;9: <a href="#">une feuille de style interne (ligne 18)</a></li>
+                                    <li class="list-group-item">Point n&deg;12: <a href="#">le positionnement &laquo; absolu &raquo; d&rsquo;un bloc au sein d&rsquo;un bloc lui-m&ecirc;me &laquo; positionn&eacute; &raquo; (ligne 187 jusque 214)</a></li>
+                                    <li class="list-group-item">Point n&deg;14: <a href="#">utilisation des balises &lt;span&gt;, &lt;em&gt;, &lt;strong&gt; (balise &lt;span&gt; ligne 117, balise &lt;strong&gt; + &lt;em&gt;) ligne 206</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- fin de la consigne 12 -->
+                        <p style="display: inline-block;">Copyright &copy;Chess+ 2016&nbsp;</p>
+                        <p class="propulsion" title="-&nbsp;Propuls&eacute; par " style="display: inline-block;"><span class="bbForum"></span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

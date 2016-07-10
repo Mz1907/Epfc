@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="agence.xsl" ?>
+<?xml-stylesheet type="text/css" href="css/bootstrap.css" ?>
+<?xml-stylesheet type="text/css" href="css/custom.css" ?>
+<!DOCTYPE agence SYSTEM "agence.dtd">
+
+<agence>
+    <bien bienType="appartement">
+        <prix transactionType="vente">150000€</prix>
+        <commune>Ixelles</commune>
+        <surface>80m²</surface>
+        <chambres>2</chambres>
+        <bains>1</bains> <!-- nombre de sales de bains -->
+        <chauffageCentrale chauffageType="gaz">non</chauffageCentrale> <!-- l'attribut est optionel car il peut etre de type vide -->
+        <vitrage>simple</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">1100€</prix>
+        <commune>Ixelles</commune>
+        <surface>95m²</surface>
+        <chambres>2</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">660€</prix>
+        <commune>Jette</commune>
+        <surface>70m²</surface>
+        <chambres>1</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="gaz">non</chauffageCentrale>
+        <vitrage>simple</vitrage>
+        <jardin>non</jardin>
+        <garage>non</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">800€</prix>
+        <commune>Anderlecht</commune>
+        <surface>80m²</surface>
+        <chambres>3</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>non</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">740€</prix>
+        <commune>Schaerbeek</commune>
+        <surface>82m²</surface>
+        <chambres>2</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>simple</vitrage>
+        <jardin>non</jardin>
+        <garage>non</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">580€</prix>
+        <commune>Anderlecht</commune>
+        <surface>58m²</surface>
+        <chambres>1</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>non</jardin>
+        <garage>non</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">1000</prix>
+        <commune>Anderlecht</commune>
+        <surface>109m²</surface>
+        <chambres>3</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>triple</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">700€</prix>
+        <commune>Schaerbeek</commune>
+        <surface>70m²</surface>
+        <chambres>2</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>simple</vitrage>
+        <jardin>non</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">715€</prix>
+        <commune>Ganshoren</commune>
+        <surface>79m²</surface>
+        <chambres>2</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>triple</vitrage>
+        <jardin>non</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="appartement">
+        <prix transactionType="location">730€</prix>
+        <commune>Anderlecht</commune>
+        <surface>69m²</surface>
+        <chambres>1</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">1280€</prix>
+        <commune>Anderlecht</commune>
+        <surface>190m²</surface>
+        <chambres>4</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>4</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="vente">360000€</prix>
+        <commune>Uccle</commune>
+        <surface>210m²</surface>
+        <chambres>5</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>4</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">1150€</prix>
+        <commune>Ganshoren</commune>
+        <surface>133m²</surface>
+        <chambres>3</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>oui</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="vente">218000€</prix>
+        <commune>Auderghem</commune>
+        <surface>180m²</surface>
+        <chambres>3</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>3</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">1580€</prix>
+        <commune>Ixelles</commune>
+        <surface>220m²</surface>
+        <chambres>4</chambres>
+        <bains>3</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>triple</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>3</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>3</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">1370€</prix>
+        <commune>Schaerbeek</commune>
+        <surface>220m²</surface>
+        <chambres>5</chambres>
+        <bains>3</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>non</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>4</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="vente">268000€</prix>
+        <commune>Ixelles</commune>
+        <surface>190m²</surface>
+        <chambres>4</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="mazout">non</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>non</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>3</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="vente">190000€</prix>
+        <commune>Laeken</commune>
+        <surface>110m²</surface>
+        <chambres>3</chambres>
+        <bains>1</bains>
+        <chauffageCentrale chauffageType="gaz">non</chauffageCentrale>
+        <vitrage>simple</vitrage>
+        <jardin>oui</jardin>
+        <garage>non</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">1050€</prix>
+        <commune>Ixelles</commune>
+        <surface>125m²</surface>
+        <chambres>3</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="gaz">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>non</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">970€</prix>
+        <commune>Anderlecht</commune>
+        <surface>130m²</surface>
+        <chambres>3</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="gaz">non</chauffageCentrale>
+        <vitrage>simple</vitrage>
+        <jardin>oui</jardin>
+        <garage>non</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">880€</prix>
+        <commune>Schaerbeek</commune>
+        <surface>140m²</surface>
+        <chambres>3</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="gaz">non</chauffageCentrale>
+        <vitrage>simple</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>2</facades>
+    </bien>
+    <bien bienType="maison">
+        <prix transactionType="location">1390€</prix>
+        <commune>Anderlecht</commune>
+        <surface>160m²</surface>
+        <chambres>3</chambres>
+        <bains>2</bains>
+        <chauffageCentrale chauffageType="mazout">oui</chauffageCentrale>
+        <vitrage>double</vitrage>
+        <jardin>oui</jardin>
+        <garage>oui</garage>
+        <pleinPied>non</pleinPied><!-- balise seulement pour les biens de type maisons. si une maison est de plein pied elle ne peut avoir plusieurs étages -->
+        <etages>2</etages><!-- balise seulement pour ls maisons && si maison pas de plein pied ! -->
+        <facades>4</facades>
+    </bien>
+</agence>

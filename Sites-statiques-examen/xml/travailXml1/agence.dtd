@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Fichier lié à : agence.xml
+-->
+<!ELEMENT agence (prix, commune, surface, chambre, bains, chauffage, vitrage, jardin, garage, pleinPieds?, etages?, facades?)>
+<!ELEMENT prix (#PCDATA)>
+<!ELEMENT commune (#PCDATA)>
+<!ELEMENT surface (#PCDATA)>
+<!ELEMENT chambre (#PCDATA)>
+<!ELEMENT bains (#PCDATA)>
+<!ELEMENT chauffage (#PCDATA)>
+<!ELEMENT vitrage (#PCDATA)>
+<!ELEMENT jardin (#PCDATA)>
+<!ELEMENT garage (#PCDATA)>
+<!ELEMENT pleinPieds (#PCDATA)>
+<!ELEMENT etages (#PCDATA)>
+<!ELEMENT facades (#PCDATA)>
+<!ATTLIST prix transactionType CDATA #REQUIRED>
+<!ATTLIST chauffage chauffageType CDATA #REQUIRED>
+<!ATTLIST bien bienType CDATA #REQUIRED>
+<!ATTLIST chauffage chauffageType CDATA #REQUIRED>

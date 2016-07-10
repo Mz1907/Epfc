@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Club d'amateurs du jeu d'&eacute;checs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" lang="fr" content="Club d'amateurs du jeu d'&eacute;checs">
+        <meta name="author" content="Zagaï Mehdi">
+        <meta name="robots" content="index, follow">
+        <!-- icones -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="shortcut icon" href="assets/img/chess_favicon.png">
+        <!-- feuilles css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- scripts js -->
+        <!--[if lt IE 9]>
+                <script src="assets/js/html5.js"></script>
+                <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/mesFonctions.js"></script>
+        <script>
+            switchTheme();
+        </script>
+    </head>
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Chess+</a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <!-- Point n°2 menu permettant de changer de style -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
+                            <ul class="dropdown-menu" id="menuChange">
+                                <li><a href="#" data-theme="default" class="theme-link">Default</a></li>
+                                <li><a href="#" data-theme="journal" class="theme-link">Flatly</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8 col-sm-push-4">
+                    <div class="page-header">
+                        <h1>Bienvenu sur Chess+</h1>
+                        <p>Auteur <span class="glyphicon glyphicon-user"></span> <a href="#">Admin</a> le <span class="glyphicon glyphicon-time"></span><time datetime="2016-04-21 17:14:05+01:00"> 21 Avril 2016 &agrave; 18:25</time></p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-push-4">
+                    <p class="lead">Les Championnats mixte et f&eacute;minin des Etats-Unis se disputent du 14 au 30 avril 2016 au Chess Club and Scholastic Center of Saint Louis, dans le Missouri. Les commentaires sont assur&eacute;s par Jennifer Shahade, Yasser Seirawan, Alejandro Ram&iacute;rez et Ben Finegold, des professionnels qu'on ne pr&eacute;sente plus.</p>
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicateurs -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper des slides du caroussel -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item">
+                                <img src="assets/img/kasparov.jpg" alt="Garry Kasparov">
+                                <div class="carousel-caption">
+                                    <h3>Garry Kasparov</h3>
+                                    <p>Garry Kasparov invit&eacute; d'honneur de l'&eacute;dition 2016</p>
+                                </div>
+                            </div>
+
+                            <div class="item active">
+                                <img src="assets/img/paikidze.jpg" alt="Nazi Paikidze">
+                                <div class="carousel-caption">
+                                    <h3>Nazi Paikidze</h3>
+                                    <p>Nazi Paikidze durant une partie</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/img/caruana_prix.jpg" alt="Fabiano Caruana">
+                                <div class="carousel-caption">
+                                    <h3>Remise des prix (part 1)</h3>
+                                    <p>Remise du prix au gagnant</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/img/paikidze_prix.jpg" alt="paikidze_prix">
+                                <div class="carousel-caption">
+                                    <h3>Remise des prix (part 2)</h3>
+                                    <p>Remise du prix &agrave; la gagnante</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controles gauche et droite -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">pr&eacute;c&egrave;dant</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                    <h2>&Eacute;dition 2016</h2>
+                    <article>
+                        <p>Le Championnat des &Eacute;tats-Unis 2016 est compos&eacute; des 12 meilleurs joueurs du pays qui s'affrontent pour un montant total des prix de 194.000 dollars, environ 172.000 &euro; - 50.000 dollars au premier du masculin (environ 44.000 &euro;) et 25.000 &agrave; la premi&egrave;re du f&eacute;minin (environ 22.000 &euro;), le titre de champion des &Eacute;tats-Unis et une place dans le cycle du championnat du monde.</p>
+                        <p>Les parties se jouent &agrave; la cadence de 90 minutes pour les 40 premiers coups, puis 30 minutes pour le reste de la partie, le tout avec un incr&eacute;ment de 30 secondes par coup. Le partage du point par accord mutuel est interdit avant le 30e coup.</p>
+                        <figure>
+                            <figcaption>Image: Ville de Saint Louis dans le Missouri</figcaption>
+                            <img style="float:left; margin-right:10px;" src="assets/img/saint_louis.jpg" alt="Saint Louis Missouri" id="st-Louis"/>
+                        </figure>
+                        <p>Les Championnats mixte et f&eacute;minin des Etats-Unis se disputent du 14 au 30 avril 2016 au Chess Club and Scholastic Center of Saint Louis, dans le Missouri. Les commentaires sont assur&eacute;s par Jennifer Shahade, Yasser Seirawan, Alejandro Ram&iacute;rez et Ben Finegold, des professionnels qu'on ne pr&eacute;sente plus.</p>
+                        <p>D&eacute;but de la retransmission en Livestream &agrave; partir de 20h, heure de Paris.</p>
+                        <h2>Championnat masculin</h2>
+                        <p>Qui suivre cette ann&eacute;e? Les joueurs les plus en vue dans le tournoi mixte sont Hikaru Nakamura (le champion en titre), Fabiano Caruana, Wesley So et Gata Kamsky (le vainqueur du tournoi d'&eacute;checs de Cappelle-la-Grande 2016).</p>
+                        <p>A noter la participation dans le tournoi masculin du ma&icirc;tre international Akshat Chandra, 16 ans, et 2477 Elo, ainsi que Jeffery Xiong, 15 ans, grand ma&icirc;tre depuis septembre 2015, qui poss&egrave;de d&eacute;j&agrave; 2618 Elo.</p>
+                        <h2>Championnat f&eacute;minin</h2>
+                        <p>Les participantes du tournoi d'&eacute;checs f&eacute;minin. Cette ann&eacute;e, on sera comme toujours attentifs au sempiternel duel entre Anna Zatonskih et son ennemie jur&eacute;e sur l'&eacute;chiquier, Irina Krush, la championne en titre. On suivra &eacute;galement, la joueuse d'origine g&eacute;orgienne, Nazi Paikidze</p>
+                    </article>
+                    <hr>
+
+                    <!-- Commentaires -->
+                    <h3>Commentaires</h3>
+                    <div class="well">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="assets/img/pp1.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="margin-t-0"><a href="#">H&eacute;l&egrave;ne Lagrave</a></h4>
+                                <p><a href="#">21 Avril 2016 19:13</a></p>
+                                <p>Les amis n&rsquo;oubliez pas que l&rsquo;ann&eacute;e derni&egrave;re le tournoi fut serr&eacute; jusqu&rsquo;au bout !</p>
+                                <p>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Pour
+                                    </button>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-thumbs-down"></span> Contre
+                                    </button>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-comment"></span> R&eacute;pondre
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="well">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="assets/img/pp10.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="margin-t-0"><a href="#">Tony Rodriguez</a></h4>
+                                <p><a href="#">21 Avril 2016 20:02</a></p>
+                                <p>Wesley So va gagner le tournoi je le sens bien.</p>
+                                <p>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Pour
+                                    </button>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-thumbs-down"></span> Contre
+                                    </button>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-comment"></span> R&eacute;pondre
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="well">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="assets/img/pp11.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="margin-t-0"><a href="#">Suzane Lee</a></h4>
+                                <p><a href="#">21 Avril 2016 20:34</a></p>
+                                <p>Non Moi je dis que c'est Caruana qui va gagner</p>
+                                <p>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Pour
+                                    </button>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-thumbs-down"></span> Contre
+                                    </button>
+                                    <button class="btn btn-sm btn-default">
+                                        <span class="glyphicon glyphicon-comment"></span> R&eacute;pondre
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Formulaire commentaires -->
+                    <h3>Postez un commentaire</h3>
+                    <p>N&rsquo;oubliez pas que les commentaires sont mod&eacute;r&eacute;s &agrave; priori et sont en &laquo; rel=nofollow &raquo;. Veuillez rester courtois et ne pas poster plus de deux liens externes par commentaire. Merci.</p>
+
+                    <div class="well">
+                        <form>
+                            <div class="form-group">
+                                <label for="contactName">Nom</label>
+                                <input type="email" class="form-control" id="contactName" placeholder="Entrez votre pseudo">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="Entrez votre e-mail">
+                                <p class="help-block">Veuillez utiliser une adresse e-mail valide</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactComment">Commentaire</label>
+                                <textarea class="form-control" id="contactComment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default">Envoyer</button>
+                        </form>
+                    </div>
+                    <hr>
+
+                    <!-- Pagination -->
+                    <nav>
+                        <ul class="pager">
+                            <li class="previous"><a href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> News pr&eacute;c&eacute;dentes</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-sm-4 col-sm-pull-8">
+
+
+                    <div class="list-group margin-b-3">
+                        <a href="index.html" class="active list-group-item">Accueil</a>
+                        <a href="resultats.html" class="list-group-item">Derniers r&eacute;sultat</a>
+                        <a href="inscription.html" class="list-group-item">Inscription au club</a>
+                        <a href="partieJour.html" class="list-group-item">Partie du jour</a>
+                        <a href="forum.html" class="list-group-item">Forum</a>
+                    </div>
+
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Puzzle du jour</h4>
+                        </div>
+                        <div class="panel-body text-center">
+                            <iframe width="310" height="341" src="http://www.shredderchess.com/online/playshredder/gdailytactics.php?mylang=en&mysize=32"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Classement Elo en temps r&eacute;el</h4>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><a href="http://www.2700chess.com" target="_blank"><img src="http://www.2700chess.com/files/topten.png" alt= "2700chess.com for more details and full list" title="2700chess.com for more details and full list"/></a></p>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><a href="http://www.2700chess.com/women" target="_blank"><img src="http://www.2700chess.com/files/topten_women.png" alt= "2700chess.com for more details and full list" title="2700chess.com for more details and full list"/></a></p>
+                        </div>
+                    </div>
+
+                    <!-- Rechercher -->
+                    <div class="well">
+                        <h4 class="margin-t-0">Rechercher</h4>
+                        <form action="#">
+                            <div class="input-group">
+                                <label class="sr-only" for="search-form">Chercher sur le site</label>
+                                <input type="text" class="form-control" id="search-form">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <span class="sr-only">Chercher</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Consignes de travail</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="assets/js/mesFonctions.js" title="Fichier javascript externe">Script Javascript externe</a></li>
+                                <li class="list-group-item">Point n&deg;1: <a href="#" title="Une page responsive">une page responsive (la page index.html est responsive)</a></li>
+                                <li class="list-group-item">Point n&deg;2: <a href="#" title="Changement de th&egrave;me">une page permettant &agrave; l&rsquo;utilisateur de choisir, au sein du navigateur, parmi 2 &laquo; styles &raquo; d&eacute;finis par vos soins (index.html poss&egrave;de un tel menu #menuChange)</a></li>
+                                <li class="list-group-item">Point n&deg;11: <a href="index.html#St-Louis" title="Formatage css + changement de th&egrave;me">un formatage CSS au sein d&rsquo;une balise (X)HTML. L&rsquo;alignement vertical du contenu d&rsquo;une balise de type &quot; block&quot;. (ligne 141)</a></li>
+                                <li class="list-group-item">
+                                    Point n&deg;14: L&rsquo;utilisation des propri&eacute;t&eacute;s
+                                    <ol class="list-group">
+                                        <li class="list-group-item"><a href="#" title="balise: &lt;nav&gt;">Balise: &lt;nav&gt; (ligne 32)</a></li>
+                                        <li class="list-group-item"><a href="#" title="balise: &lt;article&gt;">Balise: &lt;article&gt; (ligne 136)</a></li>
+                                        <li class="list-group-item"><a href="#" title="valeures display: inline-block">Valeures display: inline-block (ligne 346)</a></li>
+                                        <li class="list-group-item"><a href="#" title="propri&eacute;t&eacute; focus (voir assets/css/mySidebar.css ligne 80)">Propri&eacute;t&eacute; focus (voir assets/css/mySidebar.css ligne 80)</a></li>
+                                        <li class="list-group-item"><a href="#" title="propri&eacute;t&eacute; hover (voir assets/css/mySidebar.css ligne 72)">Propri&eacute;t&eacute; hover (voir assets/css/mySidebar.css ligne 72)</a></li>
+                                    </ol>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+            <footer class="margin-tb-3">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p style="display: inline-block">Copyright &copy; Chess+ 2016</p>
+                        <p class="propulsion" title="-&nbsp;Propuls&eacute; par " style="display: inline-block;"><span class="bbForum"></span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /.container-fluid -->
+    </body>
+</html>
+

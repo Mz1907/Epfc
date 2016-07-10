@@ -1,0 +1,30 @@
+ul.nav li:hover{
+    font-family: "Times New Roman",Georgia, Serif;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+.myBody{
+    height: 620px;
+    overflow-y:scroll;
+}
+th, td{
+    text-align: center;
+}
+.headerRow{
+    display:flex;
+}
+.headerRowDiv1{
+    padding: 5px;
+}
+.section2{
+    height: 620px;
+}
+.section3{
+    height: 620px;
+}
+
+.message{
+    font-weight: bolder;
+    color: red;
+}

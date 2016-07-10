@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chess+: inscription au club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" lang="fr" content="Chess+: inscription au club">
+        <meta name="author" content="Zagaï Mehdi">
+        <meta name="robots" content="index, follow">
+        <!-- icones -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="shortcut icon" href="assets/img/chess_favicon.png">
+        <!-- feuilles css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- scripts js -->
+        <!--[if lt IE 9]>
+                <script src="assets/js/html5.js"></script>
+                <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/mesFonctions.js"></script>
+        <script>
+            switchTheme();
+            dateHtmlInput();
+            mdpValidation();
+            focusEvent();
+            mdpCompare();
+        </script>
+    </head>
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Chess+</a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- point n°2 menu permettant de changer de style -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-theme="default" class="theme-link">Default</a></li>
+                                <li><a href="#" data-theme="journal" class="theme-link">Flatly</a></li>
+                            </ul>
+                        </li>
+                    </ul>                          
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8 col-sm-push-4">
+                    <div class="page-header">
+                        <h1>Inscription au club</h1>
+                        <p>Auteur <span class="glyphicon glyphicon-user"></span> <a href="#">Admin</a> le <span class="glyphicon glyphicon-time"></span><time datetime="2016-04-21 18:25:05+01:00"> 21 Avril 2016 &agrave; 22:01</time></p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-push-4">
+                    <p class="lead">Devenir membre</p>
+                    <blockquote>Chess+ est un club en ligne d&rsquo;amateur d&rsquo;&eacute;checs qui offre &agrave; ses membres la possibilit&eacute; d&rsquo;utiliser les s&eacute;vices propos&eacute;s par la plateforme web mis &agrave; disposition de ses membres. Une participation de 5&euro; mensuel est demand&eacute;e. Pour les plus g&eacute;n&eacute;reux de nos membres, il est possible de faire un dont via Paypal.</blockquote>
+                    <hr>
+                    <p class="text-justify text-warning">Pour vous inscrire veuillez remplir le formulaire selon les consignes</p>
+
+                    <!-- form -->
+                    <section id="form_inscription">
+                        <!-- Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                                <div class="panel panel-default">
+
+                                    <div class="panel-heading clearfix">
+                                        <i class="icon-calendar"></i>
+                                        <h3 class="panel-title">Formulaire d'inscription</h3>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <form method="post" action="#" enctype="multipart/form-data" class="form-horizontal row-border">                                            
+                                            <!-- type=text -->
+                                            <div class="form-group">
+                                                <label for="pseudo" class="col-md-2 control-label">Votre pseudo</label>
+                                                <div class="col-md-10">
+                                                    <input id="pseudo" class="form-control" type="text" name="pseudo" placeholder="Pseudo">
+                                                </div>
+                                            </div>
+
+                                            <!-- type=password -->
+                                            <div id="mdp1" class="form-group">
+                                                <label for="pass1" class="col-md-2 control-label">Mot de passe</label>
+                                                <div class="col-md-10">
+                                                    <input id="pass1" class="form-control" type="password" name="pass1">
+                                                    <span class="help-block">Votre mot de passe doit contenir au moins 8 caract&egrave;res dont une majuscule et 1 chiffre</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- type=password -->
+                                            <div id="mdp2" class="form-group">
+                                                <label for="pass2" class="col-md-2 control-label">Confirmer mot de passe</label>
+                                                <div class="col-md-10">
+                                                    <input id="pass2" class="form-control" type="password" name="pass2" disabled="disabled">
+                                                </div>
+                                            </div>
+
+                                            <!-- type=text -->
+                                            <div class="form-group">
+                                                <label for="email" class="col-md-2 control-label">Votre e-mail</label>
+                                                <div class="col-md-10">
+                                                    <input id="email" class="form-control" type="email" name="email" placeholder="E-mail">
+                                                </div>
+                                            </div>
+
+                                            <!-- Photo de profil -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading clearfix">
+                                                    <h3 class="panel-title">Photographie</h3>
+                                                </div>
+
+                                                <!-- type=file -->
+                                                <div class="panel-body">
+                                                    <div class="col-md-6">
+                                                        <p>Veuillez ajouter une image qui sera associ&eacute;e &agrave; votre profil. Les autres utilisateurs pourront voir cette image.</p>
+                                                        <p>La taille de l'image ne doit pas exc&eacute;der 500ko.</p>
+                                                        <p><input type="file" id="profil_pic" class="form-control" name="profil_pic" ></p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="superposition" id="a"><img src="assets/img/pp12.jpg" alt=""></div>
+                                                        <div class="superposition" id="b"><img src="assets/img/pp13.jpg" alt=""></div>
+                                                        <div class="superposition" id="c"><img src="assets/img/pp14.jpg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- type=date -->
+                                            <div class="form-group">                          
+                                                <label for="naissance" class="col-md-2 control-label">Votre date de naissance</label>
+                                                <div class="col-md-10">
+                                                    <input type="date" id="naissance" class="form-control">                                                    
+                                                </div>
+                                            </div>
+
+                                            <!-- type=datetime-local -->
+                                            <div class="form-group">
+                                                <label for="heure_contact" class="col-md-2 control-label">Date de contact ?</label>
+                                                <div class="col-md-10">
+                                                    <input type="datetime-local" id="heure_contact" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- type=month -->
+                                            <div class="form-group">
+                                                <label for="mois_presence" class="col-md-2 control-label">Mois le plus actif ?</label>
+                                                <div class="col-md-10">
+                                                    <input type="month" id="mois_presence" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!-- type=month -->
+                                            <div class="form-group">
+                                                <label for="semaine_vacances" class="col-md-2 control-label">Semaine disponible ?</label>
+                                                <div class="col-md-10">
+                                                    <input type="week" id="semaine_vacances" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <!--type number -->                                            
+                                            <div class="form-group">                                                
+                                                <label for="age" class="col-md-2 control-label">
+                                                    Votre &acirc;ge ?
+                                                </label>
+                                                <div class="col-md-10">
+                                                    <input type="number" id="age" class="form-control" step="1" value="5" min="5" max="160">
+                                                </div>
+                                            </div>
+
+                                            <!--type tel -->                                            
+                                            <div class="form-group">
+                                                <label for="phone" class="col-md-2 control-label">
+                                                    Num&eacute;ro de t&eacute;l&eacute;phone ?
+                                                </label>
+                                                <div class="col-md-10">
+                                                    <input type="tel" id="phone" class="form-control" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+                                                </div>
+                                            </div>
+
+                                            <!--type time -->                                            
+                                            <div class="form-group">
+                                                <label for="phone" class="col-md-2 control-label">
+                                                    Heure courante
+                                                </label>
+                                                <div class="col-md-10">
+                                                    <input type="time" class="form-control" value="">
+                                                </div>
+                                            </div>
+
+                                            <!--type url -->                                            
+                                            <div class="form-group">
+                                                <label for="input_url" class="col-md-2 control-label">
+                                                    Site web perso
+                                                </label>
+                                                <div class="col-md-10">
+                                                    <input type="url" id="input_url" class="form-control" name="input_url">
+                                                </div>
+                                            </div>
+
+                                            <!--type search -->                                            
+                                            <div class="form-group">
+                                                <label for="search" class="col-md-2 control-label">
+                                                    Chercher un membre par mots-clés
+                                                </label>
+                                                <div class="col-md-10">
+                                                    <input type="search" id="search" class="form-control" name="search_for">
+                                                </div>
+                                            </div>
+
+                                            <!--type range -->                                    
+                                            <div class="form-group">
+                                                <div class="col-md-10">
+                                                    <label for="note">
+                                                        Note sur 5 ? <input type="range" id="note" step="1" value="1" min="1" max="5">
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- radios -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading clearfix">
+                                                    <h3 class="panel-title">Votre cotisation mensuelle</h3>
+                                                </div>
+
+                                                <div class="panel-body">
+                                                    <label for="optionsRadios1" class="radio-inline">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> 5&euro;
+                                                    </label>
+                                                    <label for="optionsRadios2" class="radio-inline">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 10&euro;
+                                                    </label>
+                                                    <label for="optionsRadios3" class="radio-inline">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">15&euro;
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- color -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-body">
+                                                    <label for="colorInput">
+                                                        <input type="color" id="colorInput"> Choisir votre couleur de plateau de jeu
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading clearfix">
+                                                    <h3 class="panel-title">Boutons</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+
+                                                        <!-- checkbox -->
+                                                        <div class="panel-body">
+                                                            <label for="inlineCheckbox1">
+                                                                <input type="checkbox" id="inlineCheckbox1" value="option1" checked=""> Recevoir la news-letter mensuelle
+                                                            </label>
+                                                        </div>
+
+                                                        <!-- validation -->
+                                                        <div class="col-md-3">
+                                                            <input type="button" class="btn btn-primary" value="Validation des donn&eacute;es">
+                                                        </div>
+
+                                                        <!-- submit -->
+                                                        <div class="col-lg-9">
+                                                            <input type="submit" class="btn btn-success" value="Envoyer" name="submit">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- reset -->
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <input type="reset" class="btn btn-warning" value="Reset">
+                                                        </div>             
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row end -->
+                    </section>
+                    <!-- end form -->
+                </div>
+                <div class="col-sm-4 col-sm-pull-8">
+
+                    <div class="list-group margin-b-3"> 
+                        <a href="index.html" class="list-group-item">Accueil</a> 
+                        <a href="resultats.html" class="list-group-item">Derniers r&eacute;sultat</a> 
+                        <a href="inscription.html" class="active list-group-item">Inscription au club</a> 
+                        <a href="partieJour.html" class="list-group-item">Partie du jour</a> 
+                        <a href="forum.html" class="list-group-item">Forum</a> 
+                    </div>
+
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Puzzle du jour</h4>
+                        </div>
+                        <div class="panel-body text-center">
+                            <iframe width="310" height="341" src="http://www.shredderchess.com/online/playshredder/gdailytactics.php?mylang=en&mysize=32"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Classement Elo en temps r&eacute;el</h4>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><a href="http://www.2700chess.com" target="_blank"><img border="0" src="http://www.2700chess.com/files/topten.png" alt= "2700chess.com for more details and full list" title="2700chess.com for more details and full list"/></a></p>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><a href="http://www.2700chess.com/women" target="_blank"><img border="0" src="http://www.2700chess.com/files/topten_women.png" alt= "2700chess.com for more details and full list" title="2700chess.com for more details and full list"/></a></p>
+                        </div>
+                    </div>
+                    <!-- Rechercher -->
+                    <div class="well">
+                        <h4 class="margin-t-0">Rechercher</h4>
+                        <form action="#">
+                            <div class="input-group">
+                                <label class="sr-only" for="search-form">Chercher sur le site</label>
+                                <input type="text" class="form-control" id="search-form">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <span class="sr-only">Chercher</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Consignes de travail</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ol class="list-group">
+                                <li class="list-group-item">Point n&deg;2: <a href="inscription.html" title="formulaire">un formulaire comportant tous les types de zones de saisie et les boutons fondamentaux n&eacute;cessaires. La couleur d&rsquo;arri&egrave;re-plan des zones de saisies de type &laquo; textuel &raquo; changera lorsqu&rsquo;elles seront &laquo; s&eacute;lectionn&eacute;es &raquo;. Un &laquo; click &raquo; sur un libell&eacute; d'une des zones de saisie du formulaire renverra le pointeur dans la zone de saisie concern&eacute;e (ligne 98)</a></li>
+                                <li class="list-group-item">Point n&deg;13: <a href="inscription.html" title="superposition">une superposition partielle de blocs les uns au-dessus des autres, l&rsquo;ordre de superposition &laquo; par d&eacute;faut &raquo; &eacute;tant modifi&eacute; par vos soins. Voir inscription.html upload foto (ligne 145)</a></li> 
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+            <footer class="margin-tb-3">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p style="display: inline-block">Copyright &copy; Chess+ 2016</p>
+                        <p class="propulsion" title="-&nbsp;Propuls&eacute; par " style="display: inline-block;"><span class="bbForum"></span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /.container-fluid -->
+    </body>
+</html>

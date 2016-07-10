@@ -1,0 +1,17 @@
+body {
+    position: relative;
+}
+.affix {
+    top: 70px;
+}
+div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+}
+
