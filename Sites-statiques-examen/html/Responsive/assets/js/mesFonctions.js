@@ -44,7 +44,7 @@ function mdpValidation() {
         var cptMaj = 0; // cpt majuscules dans le mdp choisi par user
         var cptInt = 0; //  cpt numbers dans le mdp choisi par user
         var code; // code de la clé pressée
-		var keyCode
+	var keyCode;
         
         $pass1.on({
             keyup: function (e) {
